@@ -17,8 +17,10 @@ pipeline{
         }
 
         stage('Run Tests'){
-            echo 'Running tests using pytest'
-            sh 'pytest'
+            steps{
+                echo 'Running tests using pytest'
+                sh 'pytest'
+            }
         }
     }
 
