@@ -12,14 +12,14 @@ pipeline{
         stage('Installing Dependencies'){
             steps{
                 echo 'Installing Python Dependencies'
-                bat 'pip install -r requirements.txt'
+                bat 'C:/Users/adhik/AppData/Local/Programs/Python/Python313/Scripts/pip install -r requirements.txt'
             }
         }
 
         stage('Run Tests'){
             steps{
                 echo 'Running tests using pytest'
-                bat 'pytest'
+                bat 'C:/Users/adhik/AppData/Local/Programs/Python/Python313/python -m pytest'
             }
         }
     }
